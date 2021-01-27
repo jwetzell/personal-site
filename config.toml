@@ -13,11 +13,6 @@ theme = "KeepIt"
     url = "/projects/"
     weight = 3
 
-  [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 4
-
 [params]
     since = 2016
     author = "Joel Wetzell"               # Author's name
