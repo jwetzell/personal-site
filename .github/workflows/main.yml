@@ -38,4 +38,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           protocol: ftp
+          state-name: ../.ftp-deploy-sync-state.json  
           local-dir: ./public/
