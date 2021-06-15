@@ -1,14 +1,15 @@
 pipeline {
-  agent {
-    docker {
-      image 'klakegg/hugo:latest'
-    }
-
-  }
+  agent any
   stages {
-    stage('') {
+    stage('error') {
+      agent {
+        docker {
+          image 'klakegg/hugo'
+        }
+
+      }
       steps {
-        sh 'hugo build'
+        sh 'huge version'
       }
     }
 
