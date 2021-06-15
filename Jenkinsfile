@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('Hugo Build') {
       agent {
         docker {
           image 'klakegg/hugo:ci'
@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        sh 'hugo version'
+        sh 'hugo build --minify --buildDrafts'
       }
     }
 
