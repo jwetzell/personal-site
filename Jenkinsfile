@@ -4,12 +4,12 @@ pipeline {
     stage('error') {
       agent {
         docker {
-          image 'klakegg/hugo'
+          image 'klakegg/hugo:ci'
         }
 
       }
       steps {
-        sh 'huge version'
+        sh 'hugo version'
       }
     }
 
