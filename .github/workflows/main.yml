@@ -40,6 +40,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           protocol: ftps
-          security: loose
+          security: strict #this seems backwards
           state-name: ../.ftp-deploy-sync-state.json  
           local-dir: ./public/
