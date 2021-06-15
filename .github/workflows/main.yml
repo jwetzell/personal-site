@@ -29,11 +29,9 @@ jobs:
       - name: Checkout submodules
         uses: textbook/git-checkout-submodule-action@2.1.1
 
-      # Runs a single command using the runners shell
       - name: Hugo Build
-        uses: jakejarvis/hugo-build-action@v0.80.0
+        uses: jakejarvis/hugo-build-action@v0.83.1
 
-      # Runs a set of commands using the runners shell
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
@@ -41,6 +39,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          protocol: ftp
+          protocol: ftps
           state-name: ../.ftp-deploy-sync-state.json  
           local-dir: ./public/
