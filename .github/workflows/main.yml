@@ -24,10 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        
-      # Need to checkout submodules for themes
-      - name: Checkout submodules
-        uses: textbook/git-checkout-submodule-action@2.1.1
+        with:
+          submodules: true
 
       - name: Hugo Build
         uses: jakejarvis/hugo-build-action@v0.83.1
