@@ -1,4 +1,5 @@
 kind: pipeline
+type: kubernetes
 name: default
 
 steps:
@@ -28,3 +29,6 @@ steps:
     PLUGIN_SECURE: true
     PLUGIN_VERIFY: false
     PLUGIN_CLEAN_DIR: true
+  when:
+    branch: 
+      - master
