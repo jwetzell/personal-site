@@ -10,3 +10,8 @@ Thumbs.db
 
 public/
 /resources/_gen/
+build/
+.hugo_build.lock
+
+
+secrets.txt
