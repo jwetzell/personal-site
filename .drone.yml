@@ -1,0 +1,30 @@
+kind: pipeline
+name: default
+
+steps:
+- name: submodules
+  image: alpine/git
+  commands:
+  - git config --global --add safe.directory '*'
+  - git submodule update --init --recursive
+
+- name: build
+  image: xdevbase/hugo-builder:0.101
+  commands:
+  - echo "Checking Hugo version."
+  - hugo version
+  - hugo --destination /drone/src/build
+  - minify -r -o /drone/src/build /drone/src/build 
+
+- name: deploy
+  image: cschlosser/drone-ftps
+  environment:
+    FTP_USERNAME:
+      from_secret: ftp_username
+    FTP_PASSWORD:
+      from_secret: ftp_password
+    PLUGIN_HOSTNAME: ftp.jwetzell.com:21
+    PLUGIN_SRC_DIR: /build
+    PLUGIN_SECURE: true
+    PLUGIN_VERIFY: false
+    PLUGIN_CLEAN_DIR: true
