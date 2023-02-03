@@ -1,7 +1,6 @@
 kind: pipeline
-type: kubernetes
-name: default
-
+type: docker
+name: build and deploy
 steps:
 - name: submodules
   image: alpine/git
