@@ -1,4 +1,4 @@
-name: publish-schema-docs
+name: publish
 on:
   push:
     branches:
@@ -8,14 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: build site
+      - name: setup hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.110.0'
       - name: build
         run: hugo --minify --destination ./build
 
-      - name: publish site
+      - name: publish
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{secrets.FTP_URL}}
