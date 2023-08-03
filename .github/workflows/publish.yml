@@ -4,7 +4,7 @@ on:
     branches:
       - master
 jobs:
-  build-docs:
+  build-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,7 +18,7 @@ jobs:
       - name: publish
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{secrets.FTP_URL}}
+          server: ${{secrets.FTP_HOST}}
           username: ${{secrets.FTP_USERNAME}}
           password: ${{secrets.FTP_PASSWORD}}
           local-dir: ./build/
