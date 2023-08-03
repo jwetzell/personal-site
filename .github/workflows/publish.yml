@@ -1,0 +1,26 @@
+name: publish-schema-docs
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: build site
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.110.0'
+      - name: build
+        run: hugo --minify --destination ./build
+
+      - name: publish site
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{secrets.FTP_URL}}
+          username: ${{secrets.FTP_USERNAME}}
+          password: ${{secrets.FTP_PASSWORD}}
+          local-dir: ./build/
+          port: 21
+          protocol: ftps
