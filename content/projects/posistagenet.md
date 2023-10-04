@@ -1,5 +1,5 @@
 ---
-title: "PositStageNet JS Lib"
+title: "PosiStageNet JS Lib"
 date: 2023-09-10T12:00:00-06:00
 draft: false
 ---
