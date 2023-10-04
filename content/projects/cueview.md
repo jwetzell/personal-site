@@ -7,7 +7,7 @@ draft: false
 ## What is it?
 Cue View is an Electron based application made by [Alec Sparks](https://alecsparks.com/Cue-View) for displaying information from various devices over the network.
 
-I've worked on automating the build process and general clean up as well as testing the device integrations.
+I've worked on automating the build process and general clean up as well as creating/testing device integrations.
 
 The application uses the following tech.
 
