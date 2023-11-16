@@ -18,14 +18,14 @@ Some of the technologies are listed below.
     * [electron-builder](https://www.electron.build/) (package, publish)
     * [ncc](https://github.com/vercel/ncc) (script bundling)
 
-* [main.js](https://www.npmjs.com/package/showbridge-lib)
+* [lib](https://www.npmjs.com/package/showbridge-lib)
     * [Socket.IO](https://socket.io/) ("Cloud" Messaging)
     * [lodash](https://lodash.com/) (string templating)
 
 * [main.js](https://www.npmjs.com/package/showbridge)
     * [commander](https://github.com/tj/commander.js) (CLI)
 
-* Cloud
+* [Cloud](https://hub.docker.com/r/jwetzell/showbridge-cloud)
     * [Socket.IO](https://socket.io/) ("Cloud" Messaging)
 
 ## Where can I get it?
