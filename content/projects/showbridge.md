@@ -9,23 +9,23 @@ draft: false
 
 Some of the technologies are listed below.
 
-* Web UI - [Demo](https://demo.showbridge.io)
+* [webui](https://github.com/jwetzell/showbridge/tree/main/webui) - [Demo](https://demo.showbridge.io) - [NPM](https://www.npmjs.com/package/@showbridge/webui)
     * [Angular Material](https://material.angular.io/) (Web UI)
     * [Angular](https://angular.io/) (Web UI)
 
-* Launcher
+* [launcher](https://github.com/jwetzell/showbridge/tree/main/launcher)
     * [Electron](https://www.electronjs.org/)
     * [electron-builder](https://www.electron.build/) (package, publish)
     * [ncc](https://github.com/vercel/ncc) (script bundling)
 
-* [lib](https://www.npmjs.com/package/showbridge-lib)
+* [lib](https://github.com/jwetzell/showbridge/tree/main/lib) - [NPM](https://www.npmjs.com/package/@showbridge/lib)
     * [Socket.IO](https://socket.io/) ("Cloud" Messaging)
     * [lodash](https://lodash.com/) (string templating)
 
-* [main.js](https://www.npmjs.com/package/showbridge)
+* [main.js](https://github.com/jwetzell/showbridge) - [NPM](https://www.npmjs.com/package/@showbridge/cli)
     * [commander](https://github.com/tj/commander.js) (CLI)
 
-* [Cloud](https://hub.docker.com/r/jwetzell/showbridge-cloud)
+* [cloud](https://github.com/jwetzell/showbridge/tree/main/cloud) - [Docker](https://hub.docker.com/r/jwetzell/showbridge-cloud) - [NPM](https://www.npmjs.com/package/@showbridge/cloud)
     * [Socket.IO](https://socket.io/) ("Cloud" Messaging)
 
 ## Where can I get it?
