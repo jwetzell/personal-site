@@ -15,4 +15,4 @@ The application uses the following tech.
 * [electron-builder](https://www.electron.build/) (package, publish)
 * [React](https://react.dev/) (Web UI)
 * [Vite](https://vitejs.dev/) (Frontend Tooling)
-* [pNpM](https://pnpm.io/) (Node package management)
+* [PNPm](https://pnpm.io/) (Node package management)
