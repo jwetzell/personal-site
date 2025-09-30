@@ -1,50 +1,57 @@
 baseURL = "http://jwetzell.com/"
 languageCode = "en-us"
 title = "Joel Wetzell"
-theme = "KeepIt"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
 
 
-[Permalinks]
- posts = "/:year/:filename/"
+[pagination]
+pagerSize = 20
 
-[menu]
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 3
+
+[[menu.main]]
+name = "Projects"
+url = "/projects/"
+weight = 1
 
 [params]
-    since = 2016
-    author = "Joel Wetzell"               # Author's name
-    subtitle = "Just some side projects"       # Subtitle
-    cdn_url = ""           # Base CDN URL
-    home_mode = "" # post or other
-
-    avatar = "/images/me/avatar.jpg" #comment it to use gravatar
-    socialShare = true
-
-    description = "Joel Wetzell's portofolio site" # site description
-    keywords = "" # site keywords
-
+    author = ""
+    info = "Just some side projects"
+    description = "Joel Wetzell's portofolio site"
+    avatarurl = "/images/me/avatar.jpg" #comment it to use gravatar
+    keywords = "blog,developer,personal,projects"
     license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    colorScheme = "auto"
+    hidecolorschemetoggle = false
 
-[params.social]
-    GitHub = "jwetzell"
-    Linkedin = "joel-wetzell-81975979"
-    Twitter = "jwetzell"
-    Instagram = "jwetzell"
-    Facebook = "joel.wetzell"
-    Gitlab = "jwetzell"
-    Reddit = "imhonestlyconfused"
-    Paypal = "JoelWetzell"
-
-[params.share]
-    Twitter = true
-    Facebook = true
-    Linkedin = true
-
-# Used only for Seo schema
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-
-[author]
-  name = "Joel Wetzell"
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/jwetzell/"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/joel-wetzell-81975979/"
+[[params.social]]
+  name = "Gitlab"
+  icon = "fa-brands fa-gitlab fa-2x"
+  weight = 3
+  url = "https://gitlab.com/jwetzell/"
+[[params.social]]
+  name = "Reddit"
+  icon = "fa-brands fa-reddit fa-2x"
+  weight = 4
+  url = "https://reddit.com/user/imhonestlyconfused/"
+[[params.social]]
+  name = "Discord"
+  icon = "fa-brands fa-discord fa-2x"
+  weight = 4
+  url = "https://discord.com/users/293218050230976513/"
+[[params.social]]
+  name = "PayPal"
+  icon = "fa-brands fa-paypal fa-2x"
+  weight = 5
+  url = "https://paypal.me/JoelWetzell"
