@@ -5,7 +5,7 @@ draft: false
 ---
 
 ## What is it?
-Ontime is an NodeJS application bundled with Electron made by [Carlos Valente](https://carlosvalente.com/) which is described as a "browser-based application that manages event rundowns, scheduling, and cueing".
+Ontime is a NodeJS application bundled with Electron made by [Carlos Valente](https://carlosvalente.com/) which is described as a "browser-based application that manages event rundowns, scheduling, and cueing".
 
 I've [worked on](https://github.com/cpvalente/ontime/pulls?q=is%3Apr+author%3Ajwetzell+is%3Aclosed) automating some quality-of-life parts of the application like signed macOS builds, docker container, running headless, etc.
 
