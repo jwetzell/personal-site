@@ -1,8 +1,7 @@
 baseURL = "http://jwetzell.com/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Joel Wetzell"
 theme = "hugo-coder"
-languagecode = "en"
 defaultcontentlanguage = "en"
 
 
